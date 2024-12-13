@@ -46,7 +46,7 @@ This application is still in **beta** testing, meaning that while many features 
 
 - **Operating System:**  
   - **Linux:** Fully supported.  
-  - **macOS:** Expected to work normally.  
+  - **macOS:** Expected to work normally but no tested.  
   - **Windows:** Some functionalities (especially AMBER-related tasks and ASCII-formatted trajectory processing) may be limited.
 
 - **Dependencies:**  
