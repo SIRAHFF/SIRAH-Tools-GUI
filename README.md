@@ -56,22 +56,31 @@ This application is still in **beta**, meaning that while many features are func
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YourUsername/SIRAH-Tools-GUI.git
+   git clone https://github.com/SIRAHFF/SIRAH-Tools-GUI.git
    ```
+
+   ```bash
+    cd SIRAH-Tools-GUI/
+    ```
+
+   ```bash
+   unzip SIRAH-Tools-GUI_v1.0.zip
+    ```   
    
    ```bash
-   cd SIRAH-Tools-GUI
+   cd SIRAH-Tools-GUI_v1.0/
    ```
 
-2. **Create the Conda Environment:**
+1. **Create the Conda Environment:**
    ```bash
    conda env create -f env_sirah_tools.yml
+   ```
 
-3. **Activate the Environment:**
+2. **Activate the Environment:**
    ```bash
    conda activate sirah-gui
 
-4. **Run the aplication:**
+3. **Run the aplication:**
    ```bash
    python sirah-tools-gui.py
    ```
@@ -79,7 +88,7 @@ This application is still in **beta**, meaning that while many features are func
 The GUI should launch, allowing you to access all the features.
 
 
-## Optional: Create an Alias
+## Optional (Advised): Create an Alias
 
 To simplify usage, add an alias in your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
 
@@ -89,7 +98,7 @@ To simplify usage, add an alias in your shell configuration file (e.g., `~/.bash
 After reloading your shell, simply run:
 
  ```bash
-  sirah-tools
+  sirah-gui
  ```
 
 ## Known Limitations
