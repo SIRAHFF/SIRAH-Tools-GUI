@@ -25,7 +25,7 @@ This application is still in **beta** testing, meaning that while many features 
   Utilize built-in TCL scripts to classify and visualize secondary structure content. Generate SS profiles and time-series plots to understand conformational changes.
   
 - **Contacts Analysis:**  
-  Determine inter-residue and inter-molecular contacts during simulations via `contacts_distance.tcl`.  
+  Determine inter-residue and inter-molecular contacts during simulations.  
   - **Contact Maps and Matrices:** Generate 2D matrices to visualize residue contacts over time.  
   - **Contacts by Frame:** Track how contacts evolve frame-by-frame.
   
