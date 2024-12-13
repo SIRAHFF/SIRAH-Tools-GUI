@@ -116,6 +116,6 @@ As this is a beta release, stability is not fully guaranteed. Please report issu
 **Contributions are welcome!**
 If you have suggestions, find bugs, or wish to contribute code, please open an issue or submit a pull request.
 
-**License**
+## License
 
 This project is licensed under the MIT License.
