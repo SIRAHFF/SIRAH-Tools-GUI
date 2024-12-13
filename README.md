@@ -14,7 +14,7 @@
 
 **SIRAH-Tools-GUI** is a graphical user interface designed to streamline multiple analysis steps for molecular simulations carried out with the SIRAH force field. It consolidates several functionalities—from secondary structure analysis to contact mapping and backmapping—into a single, user-friendly platform.
 
-This application is still in **beta**, meaning that while many features are functional, you may encounter some limitations or bugs. Feedback and contributions are encouraged.
+This application is still in **beta** testing, meaning that while many features are functional, you may encounter some limitations or bugs. Feedback and contributions are encouraged.
 
 ## Key Features
 
@@ -93,8 +93,10 @@ The GUI should launch, allowing you to access all the features.
 To simplify usage, add an alias in your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
 
   ```bash
-  alias sirah-gui="conda activate sirah-gui && python /path/to/SIRAH-Tools-GUI/sirah-tools-gui.py"  
+  alias sirah-gui="conda activate sirah-gui && python /path/to/SIRAH-Tools-GUI/sirah-tools-gui.py"
   ```
+Be sure to change /path/to/SIRAH-Tools-GUI/sirah-tools-gui.py to the right path on your computer. 
+
 After reloading your shell, simply run:
 
  ```bash
