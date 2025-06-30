@@ -6,7 +6,6 @@
 
 <br><br>
 
-**Status:** Beta  
 **Supported OS:** Primarily Linux, likely compatible with macOS, and limited functionality on Windows
 
 ## Introduction
