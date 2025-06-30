@@ -1,6 +1,5 @@
 
-# SIRAH Tools Graphical User Interface (Beta Version)
-
+# SIRAH Tools Graphical User Interface
 <p align="center">
 <img src="https://github.com/user-attachments/assets/5c78e580-1502-4fb7-9890-caa6a3ecf9a7" alt="SIRAH-Tools-logo" width="75%" />
 </p>
