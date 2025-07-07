@@ -172,7 +172,7 @@ The main source code is located in the root directory and includes:
 
 ```bash
 
-  │   **sirah-tools-gui.py**
+  │   sirah-tools-gui.py
   ├───modules
   │   └───py files modules
   │   └───plots
