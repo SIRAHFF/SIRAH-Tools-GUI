@@ -103,7 +103,7 @@ After reloading your shell, simply run:
 
 ## ⚠️ Known Issues and Limitations
 
-### VMD Shell Compatibility Issue
+### 1. VMD Shell Compatibility Issue
 
 **SIRAH-Tools-GUI** relies on Tcl scripts that are invoked via **VMD** in text mode. However, VMD can be installed using either the **Bourne shell (`sh`)** or **C shell (`csh`)**, depending on the system environment and installation method. This poses a compatibility issue:  
 
@@ -166,7 +166,7 @@ If your current VMD installation uses `csh`, you can force a reinstallation with
 If needed, you can contact the developers or open an issue with a screenshot of your terminal and error logs to help troubleshoot further.
 
 
-### AMBER Tools on Windows:
+### 2. AMBER Tools on Windows:
 
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
