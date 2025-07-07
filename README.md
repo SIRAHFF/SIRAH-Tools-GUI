@@ -101,13 +101,13 @@ After reloading your shell, simply run:
   sirah-gui
  ```
 
-## Known Limitations
+## Known Issues and Limitations
 
 **AMBER Tools on Windows:**
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
 
-## Contributing
+## Contributors Guide
 
 🧑‍💻 **Contributing to SIRAH-Tools-GUI**
 
