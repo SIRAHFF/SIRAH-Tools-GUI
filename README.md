@@ -101,9 +101,73 @@ After reloading your shell, simply run:
   sirah-gui
  ```
 
-## Known Issues and Limitations
+### ⚠️ Known Issues and Limitations
 
-**AMBER Tools on Windows:**
+#### VMD Shell Compatibility Issue
+
+**SIRAH-Tools-GUI** relies on Tcl scripts that are invoked via **VMD** in text mode. However, VMD can be installed using either the **Bourne shell (`sh`)** or **C shell (`csh`)**, depending on the system environment and installation method. This poses a compatibility issue:  
+
+SIRAH-Tools-GUI expects VMD to be installed using **Bourne shell (`sh`)**, and may fail if the `vmd` executable points to a **C shell** installation.
+
+##### 🐛 Symptom
+
+If you encounter the error shown in the figure below, it may be due to this shell mismatch.
+
+
+##### 🔍 Check your VMD installation shell
+
+To identify which shell your VMD installation uses, run the following command:
+
+```bash
+head -1 $(which vmd)
+```
+
+- If the output is:
+  ```bash
+  #!/bin/csh
+  ```
+  then your VMD uses **C shell** — ❌ incompatible
+
+- If the output is:
+  ```bash
+  #!/bin/sh
+  ```
+  then your VMD uses **Bourne shell** — ✅ compatible.
+
+
+##### 🛠 Solution: Force VMD installation with Bourne shell
+
+If your current VMD installation uses `csh`, you can force a reinstallation with `sh` by temporarily disabling `csh`-based alternatives:
+
+1. Configure VMD as usual:
+   ```bash
+   ./configure
+   ```
+
+2. Temporarily disable `csh` alternatives (as root):
+   ```bash
+   sudo chmod -x /bin/csh /bin/tcsh 2>/dev/null 
+   ```
+
+3. Proceed with installation:
+   ```bash
+   sudo make install
+   ```
+
+4. Restore shell permissions (optional but recommended):
+   ```bash
+   sudo chmod +x /bin/csh /bin/tcsh 2>/dev/null
+   ```
+
+> ⚠️ Note: The exact paths to shells may vary by distribution. Adjust `/bin/csh` and `/bin/tcsh` accordingly if they are located elsewhere on your system.
+
+---
+
+If needed, you can contact the developers or open an issue with a screenshot of your terminal and error logs to help troubleshoot further.
+
+
+#### AMBER Tools on Windows:
+
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
 
