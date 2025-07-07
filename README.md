@@ -166,7 +166,7 @@ If your current VMD installation uses `csh`, you can force a reinstallation with
 If needed, you can contact the developers or open an issue with a screenshot of your terminal and error logs to help troubleshoot further.
 
 
-### 2. AMBER Tools on Windows:
+### 2. AMBER Tools on Windows (limitation):
 
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
