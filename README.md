@@ -86,7 +86,7 @@ This application is still in **beta** testing, meaning that while many features 
 The GUI should launch, allowing you to access all the features.
 
 
-## Optional (Advised): Create an Alias
+### Optional (Advised): Create an Alias
 
 To simplify usage, add an alias in your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
 
@@ -101,20 +101,20 @@ After reloading your shell, simply run:
   sirah-gui
  ```
 
-### ⚠️ Known Issues and Limitations
+## ⚠️ Known Issues and Limitations
 
-#### VMD Shell Compatibility Issue
+### VMD Shell Compatibility Issue
 
 **SIRAH-Tools-GUI** relies on Tcl scripts that are invoked via **VMD** in text mode. However, VMD can be installed using either the **Bourne shell (`sh`)** or **C shell (`csh`)**, depending on the system environment and installation method. This poses a compatibility issue:  
 
 SIRAH-Tools-GUI expects VMD to be installed using **Bourne shell (`sh`)**, and may fail if the `vmd` executable points to a **C shell** installation.
 
-##### 🐛 Symptom
+#### 🐛 Symptom
 
 If you encounter the error shown in the figure below, it may be due to this shell mismatch.
 
 
-##### 🔍 Check your VMD installation shell
+#### 🔍 Check your VMD installation shell
 
 To identify which shell your VMD installation uses, run the following command:
 
@@ -135,7 +135,7 @@ head -1 $(which vmd)
   then your VMD uses **Bourne shell** — ✅ compatible.
 
 
-##### 🛠 Solution: Force VMD installation with Bourne shell
+#### 🛠 Solution: Force VMD installation with Bourne shell
 
 If your current VMD installation uses `csh`, you can force a reinstallation with `sh` by temporarily disabling `csh`-based alternatives:
 
@@ -166,7 +166,7 @@ If your current VMD installation uses `csh`, you can force a reinstallation with
 If needed, you can contact the developers or open an issue with a screenshot of your terminal and error logs to help troubleshoot further.
 
 
-#### AMBER Tools on Windows:
+### AMBER Tools on Windows:
 
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
