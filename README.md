@@ -106,14 +106,141 @@ After reloading your shell, simply run:
 **AMBER Tools on Windows:**
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
-**Beta Status:**
-As this is a beta release, stability is not fully guaranteed. Please report issues or bugs via GitHub Issues.
 
 ## Contributing
 
-**Contributions are welcome!**
-If you have suggestions, find bugs, or wish to contribute code, please open an issue or submit a pull request.
+🧑‍💻 **Contributing to SIRAH-Tools-GUI**
 
-## License
+Thank you for your interest in contributing to **SIRAH-Tools-GUI**, a Python-based GUI toolkit for analysing and visualising coarse-grained molecular-dynamics trajectories with the SIRAH force field. This guide explains how to contribute effectively while keeping the codebase clean and maintainable.
 
-This project is licensed under the MIT License.
+---
+
+🐞 **Issues & Feature Requests — Start Here** ✅
+
+Whether you are reporting a bug, proposing an enhancement, or planning a large new feature, **always open a new issue first** in the [GitHub Issue Tracker](https://github.com/SIRAHFF/SIRAH-Tools-GUI/issues). This allows the community and developers to:
+
+- Confirm that the issue has not already been addressed.  
+- Discuss design choices and possible approaches.  
+- Coordinate efforts so work is not duplicated.  
+
+> **Best practice:** For major modifications, describe your proposal in an issue _before_ writing code. This collaborative design step reduces re-work and makes it easier to align with the project’s standards.  
+> After implementing your solution, submit a Pull Request (PR) referencing that issue. Even if you have push rights, opening a PR lets automated checks run and gives reviewers a clear change history before merging.
+
+Please include in every issue:
+
+- Operating system, Python version, and environment details.  
+- Steps to reproduce the problem (if applicable).  
+- Screenshots or full error messages for GUI or traceback errors.
+
+---
+
+🚀 **Prerequisites**
+
+Before contributing, ensure that:
+
+- You have working knowledge of **Python 3.9+**.  
+- You are comfortable with Git and GitHub workflows.  
+- You have installed all project dependencies.
+
+We recommend Conda for environment management:
+
+```bash
+git clone https://github.com/SIRAHFF/SIRAH-Tools-GUI.git
+cd SIRAH-Tools-GUI
+conda env create -f environment.yml
+conda activate sirah-gui
+```
+
+---
+
+📁 **Project Structure Overview**
+
+Take a moment to familiarise yourself with this structure before contributing.
+
+The main source code is located in the root directory and includes:
+
+- **GUI logic** in `sirah-tools-gui.py`, which initializes the interface and layout.
+- **Modular tabs and utilities** in `modules/`, including:
+  - `analysis_tab.py`, `ss_analysis.py`, `contacts_tab.py`, `load_files_tab.py`, `backmapping_tab.py`
+  - `about_tab.py`, `utilities.py`, `utils.py`
+- **Plotting scripts** in `modules/plots/`:
+  - `plot_percentage.py`, `contacts_by_frame.py`, `matrix_contacts.py`, `native_contacts.py`, `ss_plot.py`
+- **TCL scripts** in `TCL/` used for advanced molecular analysis in VMD:
+  - `sirah_analysis.tcl`, `sirah_vmdtk.tcl`, `sirah_ss.tcl`, `contacts_distance.tcl`, `backmapping.tcl`
+- **Images** and visual assets in `img/`:
+  - `SIRAH-logo.png`, `sirahtools-logo.png`
+
+
+│   **sirah-tools-gui.py**
+├───modules
+│   └───py files modules
+│   └───plots
+│           └───py files for plotting
+│───TCL
+│    └───tcl files for VMD
+│    
+│───img
+│    └───png logos
+
+---
+
+🛠️ **How to Contribute**
+
+1. **Fork** the repository and clone your fork:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/SIRAH-Tools-GUI.git
+   cd SIRAH-Tools-GUI
+   ```
+
+2. **Create a feature branch**:
+   ```bash
+   git checkout -b feature-add-export-option
+   ```
+
+3. **Implement your changes**, keeping commits focused and modular.  
+4. **Test** your contribution locally.  
+5. **Commit** with a descriptive message:
+   ```bash
+   git commit -m "Add: export DPI and format options to Ramachandran plot"
+   ```
+
+6. **Push** your branch and open a **Pull Request**:
+   ```bash
+   git push origin feature-add-export-option
+   ```
+
+7. Reference the related issue in your PR description and provide a clear summary of your changes.
+
+---
+
+🧼 **Code Style & Quality**
+
+We adhere strictly to [PEP 8](https://peps.python.org/pep-0008/) and [PEP 257](https://peps.python.org/pep-0257/).
+
+- **Docstrings** are required for all public functions and classes.  
+- Inline comments must clarify any complex logic.  
+
+---
+
+🧪 **Testing & Validation**
+
+Although a formal test suite is not yet in place, please:
+
+- Manually validate GUI behaviour and output.  
+- Provide minimal example scripts or sample data when possible.  
+- Test on multiple platforms (Linux, macOS, Windows) if feasible.
+
+If you fix a bug, document how you verified the fix or include a reproducible test case.
+
+---
+
+🤝 **Code of Conduct**
+
+All contributors are expected to behave respectfully. **SIRAH-Tools-GUI** is a collaborative academic project—help us maintain a welcoming, inclusive environment for everyone.
+
+### 📜 License
+
+By submitting code to this repository you agree that it be released under the **MIT License**, consistent with the rest of the project.
+
+---
+
