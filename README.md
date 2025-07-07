@@ -170,17 +170,20 @@ The main source code is located in the root directory and includes:
 - **Images** and visual assets in `img/`:
   - `SIRAH-logo.png`, `sirahtools-logo.png`
 
+```bash
 
-│   **sirah-tools-gui.py**
-├───modules
-│   └───py files modules
-│   └───plots
-│           └───py files for plotting
-│───TCL
-│    └───tcl files for VMD
-│    
-│───img
-│    └───png logos
+  │   **sirah-tools-gui.py**
+  ├───modules
+  │   └───py files modules
+  │   └───plots
+  │           └───py files for plotting
+  │───TCL
+  │    └───tcl files for VMD
+  │    
+  │───img
+  │    └───png logos
+
+```
 
 ---
 
