@@ -171,15 +171,15 @@ If needed, you can contact the developers or open an issue with a screenshot of 
 Some analyses that rely on AMBER tools (e.g., LEaP or cpptraj) or ASCII-formatted (CRD) trajectories may not function as intended on Windows.
 
 
-## Contributors Guide
+## 📑🧑‍💻   Contributors Guide
 
-🧑‍💻 **Contributing to SIRAH-Tools-GUI**
+### Contributing to SIRAH-Tools-GUI
 
 Thank you for your interest in contributing to **SIRAH-Tools-GUI**, a Python-based GUI toolkit for analysing and visualising coarse-grained molecular-dynamics trajectories with the SIRAH force field. This guide explains how to contribute effectively while keeping the codebase clean and maintainable.
 
 ---
 
-🐞 **Issues & Feature Requests — Start Here** ✅
+### 🐞 Issues & Feature Requests — Start Here  ✅
 
 Whether you are reporting a bug, proposing an enhancement, or planning a large new feature, **always open a new issue first** in the [GitHub Issue Tracker](https://github.com/SIRAHFF/SIRAH-Tools-GUI/issues). This allows the community and developers to:
 
@@ -198,7 +198,7 @@ Please include in every issue:
 
 ---
 
-🚀 **Prerequisites**
+### 🚀 Prerequisites
 
 Before contributing, ensure that:
 
@@ -217,7 +217,7 @@ conda activate sirah-gui
 
 ---
 
-📁 **Project Structure Overview**
+### 📁 Project Structure Overview
 
 Take a moment to familiarise yourself with this structure before contributing.
 
@@ -251,7 +251,7 @@ The main source code is located in the root directory and includes:
 
 ---
 
-🛠️ **How to Contribute**
+### 🛠️ How to Contribute
 
 1. **Fork** the repository and clone your fork:
    ```bash
@@ -280,7 +280,7 @@ The main source code is located in the root directory and includes:
 
 ---
 
-🧼 **Code Style & Quality**
+### 🧼 Code Style & Quality
 
 We adhere strictly to [PEP 8](https://peps.python.org/pep-0008/) and [PEP 257](https://peps.python.org/pep-0257/).
 
@@ -301,11 +301,11 @@ If you fix a bug, document how you verified the fix or include a reproducible te
 
 ---
 
-🤝 **Code of Conduct**
+### 🤝 Code of Conduct
 
 All contributors are expected to behave respectfully. **SIRAH-Tools-GUI** is a collaborative academic project—help us maintain a welcoming, inclusive environment for everyone.
 
-### 📜 License
+## 📜 License
 
 By submitting code to this repository you agree that it be released under the **MIT License**, consistent with the rest of the project.
 
