@@ -113,6 +113,9 @@ SIRAH-Tools-GUI expects VMD to be installed using **Bourne shell (`sh`)**, and m
 
 If you encounter the error shown in the figure below, it may be due to this shell mismatch.
 
+![image](https://github.com/user-attachments/assets/fe58aa1b-0e64-44e5-84b1-22678bb244de)
+
+
 
 #### 🔍 Check your VMD installation shell
 
