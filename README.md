@@ -10,9 +10,9 @@
 
 ## Introduction
 
-**SIRAH-Tools-GUI** is a graphical user interface designed to streamline multiple analysis steps for molecular simulations carried out with the SIRAH force field. It consolidates several functionalities—from secondary structure analysis to contact mapping and backmapping—into a single, user-friendly platform.
+**SIRAH-Tools-GUI** is a graphical user interface designed to streamline multiple analysis steps for molecular simulations carried out with the SIRAH force field. It consolidates several functionalities—from secondary structure analysis to contact mapping and backmapping—into a single, user-friendly platform, see [SIRAH Tools GUI documentation](https://sirahff.github.io/documentation/Tutorials%20sirahgui.html) for details.
 
-This application is still in **beta** testing, meaning that while many features are functional, you may encounter some limitations or bugs. Feedback and contributions are encouraged.
+Feedback and contributions are encouraged.
 
 ## Key Features
 
