@@ -1,0 +1,27 @@
+SIRAH-Tools-GUI
+│   sirah-tools-gui.py
+├───modules
+│   └───analysis_tab.py
+│   └───ss_analysis.py
+│   └───contacts_tab.py
+│   └───load_files_tab.py
+│   └───backmapping_tab.py
+|   └───about_tab.py
+|   └───utilities.py
+|   └───utils.py
+│   └───plots
+│           └───plot_percentage.py
+│           └───contacts_by_frame.py
+│           └───matrix_contacts.py
+│           └───native_contacts.py
+│           └───ss_plot.py
+│───TCL
+│    └───sirah_analysis.tcl
+│    └───sirah_vmdtk.tcl
+│    └───sirah_ss.tcl
+│    └───contacts_distance.tcl
+│    └───backmapping.tcl
+│
+│───img
+│    └───SIRAH-logo.png
+│    └───sirahtools-logo.png

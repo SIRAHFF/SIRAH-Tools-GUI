@@ -1,0 +1,28 @@
+name: sirah-gui
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Opción para Python 3.11
+  - python=3.11.5
+
+  # Opción para Python 3.10
+  #- python=3.10.15
+
+  # Library versions for compatibility and stability
+  - numpy=1.24.3
+  - pandas=2.0.3
+  - matplotlib=3.7.2
+  - seaborn=0.12.2
+  - tqdm=4.65.0
+  - pip  
+  - pip:
+      - ttkbootstrap==1.10.1
+      - fpdf==1.7.2
+      - imageio==2.35.1
+      - screeninfo==0.8
+      - seaborn==0.12.2
+
+
+
+
