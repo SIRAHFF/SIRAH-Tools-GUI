@@ -60,25 +60,17 @@ Feedback and contributions are encouraged.
    ```bash
     cd SIRAH-Tools-GUI/
     ```
-
-   ```bash
-   unzip SIRAH-Tools-GUI_v1.0.zip
-    ```   
    
-   ```bash
-   cd SIRAH-Tools-GUI_v1.0/
-   ```
-
-1. **Create the Conda Environment:**
+2. **Create the Conda Environment:**
    ```bash
    conda env create -f env_sirah_tools.yml
    ```
 
-2. **Activate the Environment:**
+3. **Activate the Environment:**
    ```bash
    conda activate sirah-gui
 
-3. **Run the aplication:**
+4. **Run the aplication:**
    ```bash
    python sirah-tools-gui.py
    ```
